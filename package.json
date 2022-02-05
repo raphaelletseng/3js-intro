@@ -1,12 +1,16 @@
 {
   "name": "3js",
+  "homepage": "https://raphaelletseng.github.io/3js-space",
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "vite": "^2.7.2"
   },
   "dependencies": {
