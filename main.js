@@ -86,7 +86,7 @@ earth.position.z = 90;
 earth.position.setX(-20);
 
 
-moon.position.z = 140;
+moon.position.z = 130;
 moon.position.setX(15);
 moon.position.y = -3;
 
