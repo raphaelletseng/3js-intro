@@ -1,4 +1,4 @@
-import './style.css';
+import "./style.css";
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 
@@ -16,7 +16,7 @@ renderer.render(scene, camera);
 
 const geometry = new THREE.TorusKnotGeometry(10,3,16,100);
 //const material = new THREE.MeshStandardMaterial({color: 0x9E4606 });
-const knotTexture = new THREE.TextureLoader().load('/images/neptune.jpeg');
+const knotTexture = new THREE.TextureLoader().load("images/neptune.jpg");
 const material = new THREE.MeshStandardMaterial({map: knotTexture });
 const torus = new THREE.Mesh(geometry, material);
 
@@ -48,7 +48,7 @@ function addStar(){
 }
 Array(400).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load('/images/space3.jpg');
+const spaceTexture = new THREE.TextureLoader().load("images/space3.jpg");
 scene.background = spaceTexture;
 
 //const raphTexture = new THREE.TextureLoader().load('raph.PNG');
@@ -57,9 +57,9 @@ scene.background = spaceTexture;
 
 //raph.position.z = 30;
 //raph.position.x = 2;
-
-const earthTexture = new THREE.TextureLoader().load('/images/earth.jpeg');
-const earthNormalTexture = new THREE.TextureLoader().load('earth_normal.jpeg');
+//import earth from "/images/earth.jpg";
+const earthTexture = new THREE.TextureLoader().load("images/earth.jpg");
+//const earthNormalTexture = new THREE.TextureLoader().load("earth_normal.jpg");
 
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(12, 32, 16),
@@ -69,8 +69,8 @@ const earth = new THREE.Mesh(
   })
 )
 
-const moonTexture = new THREE.TextureLoader().load('/images/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('/images/normal.jpeg');
+const moonTexture = new THREE.TextureLoader().load("images/moon.jpg");
+const normalTexture = new THREE.TextureLoader().load("images/normal.jpg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(6,32,16),
